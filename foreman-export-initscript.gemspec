@@ -3,7 +3,7 @@ $:.push File.expand_path("../lib", __FILE__)
 
 Gem::Specification.new do |s|
   s.name        = "foreman-export-initscript"
-  s.version     = "0.0.1"
+  s.version     = "0.1.0"
   s.authors     = ["Emile Cantin"]
   s.email       = ["emile.cantin@gmail.com"]
   s.homepage    = ""
@@ -19,8 +19,6 @@ Gem::Specification.new do |s|
 
   # specify any dependencies here; for example:
   s.add_development_dependency "rspec"
-  # s.add_development_dependency "fakefs", git: "git://github.com/defunkt/fakefs.git"
   s.add_development_dependency "rr"
-  s.add_dependency "foreman"
-  # s.add_runtime_dependency "rest-client"
+  s.add_dependency 'foreman', '~> 0.63'
 end
